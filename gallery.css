@@ -1,0 +1,153 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    background-color: #e6f7ff;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #cceeff;
+}
+
+h1, h2 {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    text-align: center;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.navigation-flex {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.navigation-flex li {
+    margin: 0 15px;
+}
+
+.navigation-flex a {
+    text-decoration: none;
+    color: #007acc;
+    font-weight: 700;
+    padding: 8px 12px;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+.navigation-flex a.active, .navigation-flex a:hover {
+    color: #005f99;
+    border-bottom: 2px solid white;
+}
+
+
+/* Gallery Section */
+main.gallery {
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.painting.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust grid size for responsive images */
+    gap: 20px;
+    width: 100%;  /* Ensure it stretches across available space */
+    max-width: 1200px;
+    margin-top: 20px;
+}
+
+.one-column {
+    width: 100%;  /* Ensure the container is responsive */
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+    padding: 10px;  /* Adds space around the image */
+}
+.two-column {
+    width: 100%;  /* Ensure the container is responsive */
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+    padding: 10px;  /* Adds space around the image */
+}
+
+.photo-item:hover {
+    transform: scale(1.05);
+}
+
+.photo-item img {
+    width: 100%;  /* Image takes up the full container width */
+    height: 100%;  /* Makes sure the image takes up the full height */
+    object-fit: cover;  /* Ensure it covers the entire area */
+    border-radius: 12px;  /* Rounded corners for images */
+    display: block;
+} 
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #cceeff;
+}
+
+.contact-form {
+    margin-top: 10px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form select, .contact-form input[type="email"] {
+    padding: 8px;
+    border: 1px solid #007acc;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.contact-form input[type="email"]::placeholder {
+    color: #666;
+} 

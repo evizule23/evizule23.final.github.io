@@ -1,0 +1,129 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    background-color: #e6f7ff;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #cceeff;
+}
+
+h1, h2 {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    text-align: center;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.navigation-flex {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.navigation-flex li {
+    margin: 0 15px;
+}
+
+.navigation-flex a {
+    text-decoration: none;
+    color: #007acc;
+    font-weight: 700;
+    padding: 8px 12px;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+.navigation-flex a.active, .navigation-flex a:hover {
+    color: #005f99;
+    border-bottom: 2px solid white;
+}
+
+/* Main Content */
+main {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.image img {
+    width: 80%;
+    max-width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.subscribe {
+    background-color: #007acc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.subscribe:hover {
+    background-color: #005f99;
+    transform: scale(1.05);
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #cceeff;
+}
+
+.contact-form {
+    margin-top: 10px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form select, .contact-form input[type="email"] {
+    padding: 8px;
+    border: 1px solid #007acc;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.contact-form input[type="email"]::placeholder {
+    color: #666;
+}
